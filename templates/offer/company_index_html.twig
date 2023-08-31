@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>Available job offers</h1>
+
+<table>
+	<tr>
+		<th>Title</th>
+	</tr>
+
+	<tr>
+		{% for o in offers %}
+
+			<tr>
+				<td>{{ o.title }}</td>
+			</tr>
+		{% endfor %}
+	</tr>
+</table> 
+
+{% endblock %}
